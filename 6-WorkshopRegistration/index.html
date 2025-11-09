@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshop Registration Form</title>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header align="center">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdDVzdLxhMo2UrnlS7KxhbYjzGwPqVO9qP8Q&s" width="300" alt="Workshop Logo">
+    <h1>Workshop Registration Form</h1>
+    <p><em>Fill out this form to register for our upcoming technical workshop.</em></p>
+    <hr width="70%">
+  </header>
+
+  <!-- Introduction Section -->
+  <section>
+    <h2>About the Workshop</h2>
+    <p>
+      Our <strong>Hands-On HTML Workshop</strong> is designed for students and beginners who wish to strengthen their understanding of web development basics.  
+      Participants will learn how to structure web pages and work with various HTML elements through real-time exercises.
+    </p>
+    <ul>
+      <li>🧠 Learn HTML from scratch</li>
+      <li>🖋️ Build your first webpage during the session</li>
+      <li>🎓 Receive a digital participation certificate</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- Schedule Table Section -->
+  <section align="center">
+    <h2>Workshop Schedule</h2>
+    <table border="1" width="80%" cellpadding="10" cellspacing="0">
+      <tr>
+        <th>Session</th>
+        <th>Topic</th>
+        <th>Time</th>
+      </tr>
+      <tr>
+        <td>Day 1</td>
+        <td>HTML Fundamentals</td>
+        <td>10:00 AM – 12:30 PM</td>
+      </tr>
+      <tr>
+        <td>Day 2</td>
+        <td>Building Web Pages</td>
+        <td>10:00 AM – 1:00 PM</td>
+      </tr>
+      <tr>
+        <td>Day 3</td>
+        <td>Mini Project & Q&A</td>
+        <td>10:00 AM – 12:00 PM</td>
+      </tr>
+    </table>
+  </section>
+
+  <hr>
+
+  <!-- Registration Form Section -->
+  <section>
+    <h2>Register Here</h2>
+    <form>
+      <fieldset>
+        <legend><strong>Participant Details</strong></legend>
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="phone">Contact Number:</label><br>
+        <input type="number" id="phone" name="phone" placeholder="Enter your contact number" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend><strong>Workshop Preferences</strong></legend>
+
+        <label for="topic">Select Workshop Topic:</label><br>
+        <select id="topic" name="topic">
+          <option>HTML Basics</option>
+          <option>CSS Fundamentals</option>
+          <option>Web Accessibility</option>
+        </select><br><br>
+
+        <label for="session">Preferred Session:</label><br>
+        <select id="session" name="session">
+          <option>Morning (10:00 AM - 12:00 PM)</option>
+          <option>Afternoon (2:00 PM - 4:00 PM)</option>
+        </select><br><br>
+
+        <label for="experience">Previous Experience (if any):</label><br>
+        <textarea id="experience" name="experience" rows="3" placeholder="Describe your prior experience..."></textarea><br><br>
+
+        <input type="checkbox" id="updates" name="updates">
+        <label for="updates">Subscribe to workshop updates</label><br><br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label><br><br>
+      </fieldset>
+
+      <br>
+
+      <input type="submit" value="Submit Registration">
+      <input type="reset" value="Clear Form">
+    </form>
+  </section>
+
+  <hr>
+
+  <!-- Footer Section -->
+  <footer align="center">
+    <p><strong>Workshop Venue:</strong> University, Bengaluru</p>
+    <p>📞 Contact: +91 98765 43210 | 📧 <a href="mailto:info@htmlworkshop.com">info@htmlworkshop.com</a></p>
+    <p>© 2025 HTML Workshop — All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
