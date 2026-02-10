@@ -23,15 +23,6 @@ Create a simple event invitation page for "TechConnect 2026 - Annual Technology 
 | **Quotes** | `<blockquote>`, `<footer>` in blockquote, `<cite>` |
 | **Separators** | `<hr>` |
 
-### 🎯 Key New Concepts (Not in Portfolio):
-
-- **`<img>`** - Images with proper alt text
-- **`<figure>` & `<figcaption>`** - Semantic media containers
-- **`<table>`** - Structured data table with 3 rows
-- **YouTube `<iframe>`** - Embedded video player
-- **Google Maps `<iframe>`** - Interactive embedded map
-- **`<details>` & `<summary>`** - Collapsible FAQ sections
-
 **Total Concepts:** 25+ HTML elements focusing on multimedia and embedded content
 
 ---
