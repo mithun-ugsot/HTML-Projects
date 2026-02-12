@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Habit Tracker Dashboard - Track daily habits, monitor weekly progress, and build consistency">
+    <meta name="keywords" content="habit tracker, personal dashboard, progress tracking, daily habits, weekly goals">
+    <title>Personal Habit Tracker Dashboard</title>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <h1>Personal Habit Tracker Dashboard</h1>
+        <p><em>Build better habits, one day at a time</em></p>
+        <p>Week of <time datetime="2026-02-09">Feb 9</time> &ndash; <time datetime="2026-02-15">Feb 15, 2026</time></p>
+        <hr>
+    </header>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav aria-label="Dashboard navigation">
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="#weekly">Weekly Progress</a></li>
+            <li><a href="#daily-log">Daily Log</a></li>
+            <li><a href="#goals">Monthly Goals</a></li>
+            <li><a href="#tips">Tips</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+
+        <!-- WEEKLY PROGRESS WITH STREAKS -->
+        <section id="weekly">
+            <h2>Weekly Progress &amp; Streaks</h2>
+
+            <table border="1" cellpadding="8" cellspacing="0" summary="Weekly habit progress with completion rates and current streaks">
+                <caption><strong>Week of <time datetime="2026-02-09">Feb 9, 2026</time></strong></caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Habit</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Done / Target</th>
+                        <th scope="col">Progress</th>
+                        <th scope="col">Streak</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Morning Run</strong></td>
+                        <td>Fitness</td>
+                        <td><data value="5">5 / 7</data></td>
+                        <td><meter value="5" min="0" max="7">71%</meter></td>
+                        <td><data value="5">5 days</data> &#128293;</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Read 30 Min</strong></td>
+                        <td>Learning</td>
+                        <td><data value="6">6 / 7</data></td>
+                        <td><meter value="6" min="0" max="7">86%</meter></td>
+                        <td><data value="12">12 days</data> &#128293;</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Drink 8 Glasses</strong></td>
+                        <td>Health</td>
+                        <td><data value="7">7 / 7</data></td>
+                        <td><meter value="7" min="0" max="7">100%</meter></td>
+                        <td><data value="20">20 days</data> &#127942;</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Meditate 10 Min</strong></td>
+                        <td>Mindfulness</td>
+                        <td><data value="4">4 / 7</data></td>
+                        <td><meter value="4" min="0" max="7">57%</meter></td>
+                        <td><data value="2">2 days</data> &#128170;</td>
+                    </tr>
+                    <tr>
+                        <td><strong>No Screens After 9 PM</strong></td>
+                        <td>Digital Wellness</td>
+                        <td><data value="3">3 / 7</data></td>
+                        <td><meter value="3" min="0" max="7">43%</meter></td>
+                        <td><data value="1">1 day</data> &#9888;</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Practice Guitar</strong></td>
+                        <td>Hobby</td>
+                        <td><data value="5">5 / 5</data></td>
+                        <td><meter value="5" min="0" max="5">100%</meter></td>
+                        <td><data value="5">5 days</data> &#127942;</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Overall:</strong> <progress value="30" max="40">30 of 40</progress> <small>(75%)</small></p>
+        </section>
+
+        <hr>
+
+        <!-- DAILY LOG (single day sample) -->
+        <section id="daily-log">
+            <h2>Daily Log</h2>
+
+            <article>
+                <h3><time datetime="2026-02-12">Wednesday, February 12</time></h3>
+                <table border="1" cellpadding="8" cellspacing="0" summary="Habit log for Wednesday February 12">
+                    <caption><strong>Today&rsquo;s Log</strong></caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Habit</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Morning Run</td>
+                            <td><data value="1">&#10003; Done</data></td>
+                            <td><time datetime="2026-02-12T06:30">6:30 AM</time></td>
+                            <td>3 miles, felt great</td>
+                        </tr>
+                        <tr>
+                            <td>Read 30 Min</td>
+                            <td><data value="1">&#10003; Done</data></td>
+                            <td><time datetime="2026-02-12T21:00">9:00 PM</time></td>
+                            <td>Finished Chapter 5</td>
+                        </tr>
+                        <tr>
+                            <td>Drink 8 Glasses</td>
+                            <td><data value="1">&#10003; Done</data></td>
+                            <td>&mdash;</td>
+                            <td>Used tracking bottle</td>
+                        </tr>
+                        <tr>
+                            <td>Meditate 10 Min</td>
+                            <td><data value="0">&#10007; Missed</data></td>
+                            <td>&mdash;</td>
+                            <td>Skipped &ndash; overslept</td>
+                        </tr>
+                        <tr>
+                            <td>No Screens After 9 PM</td>
+                            <td><data value="1">&#10003; Done</data></td>
+                            <td>&mdash;</td>
+                            <td>Read a book instead</td>
+                        </tr>
+                        <tr>
+                            <td>Practice Guitar</td>
+                            <td><data value="1">&#10003; Done</data></td>
+                            <td><time datetime="2026-02-12T19:00">7:00 PM</time></td>
+                            <td>Chord transitions</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- MONTHLY GOALS -->
+        <section id="goals">
+            <h2>Monthly Goals &mdash; <time datetime="2026-02">February 2026</time></h2>
+
+            <table border="1" cellpadding="8" cellspacing="0" summary="Monthly goal progress for each habit">
+                <caption><strong>February Targets</strong></caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Habit</th>
+                        <th scope="col">Done / Target</th>
+                        <th scope="col">Progress</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Morning Run</td>
+                        <td><data value="15">15</data> / <data value="25">25</data></td>
+                        <td><progress value="15" max="25">60%</progress> <small>60%</small></td>
+                    </tr>
+                    <tr>
+                        <td>Read 30 Min</td>
+                        <td><data value="18">18</data> / <data value="28">28</data></td>
+                        <td><progress value="18" max="28">64%</progress> <small>64%</small></td>
+                    </tr>
+                    <tr>
+                        <td>Drink 8 Glasses</td>
+                        <td><data value="20">20</data> / <data value="28">28</data></td>
+                        <td><progress value="20" max="28">71%</progress> <small>71%</small></td>
+                    </tr>
+                    <tr>
+                        <td>Meditate 10 Min</td>
+                        <td><data value="10">10</data> / <data value="20">20</data></td>
+                        <td><progress value="10" max="20">50%</progress> <small>50%</small></td>
+                    </tr>
+                    <tr>
+                        <td>No Screens After 9 PM</td>
+                        <td><data value="8">8</data> / <data value="28">28</data></td>
+                        <td><progress value="8" max="28">29%</progress> <small>29%</small></td>
+                    </tr>
+                    <tr>
+                        <td>Practice Guitar</td>
+                        <td><data value="12">12</data> / <data value="20">20</data></td>
+                        <td><progress value="12" max="20">60%</progress> <small>60%</small></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- TIPS -->
+        <section id="tips">
+            <h2>Tips &amp; Motivation</h2>
+
+            <details>
+                <summary><strong>Habit Stacking</strong></summary>
+                <p>Link a new habit to an existing one: <q>After I pour my coffee, I will meditate for 10 minutes.</q></p>
+            </details>
+
+            <details>
+                <summary><strong>The Two-Minute Rule</strong></summary>
+                <p>Scale new habits down to two minutes. Instead of <q>Read 30 minutes,</q> start with <q>Read one page.</q></p>
+            </details>
+
+            <details>
+                <summary><strong>Accountability Tips</strong></summary>
+                <ul>
+                    <li>Review your tracker every evening</li>
+                    <li>Celebrate small wins</li>
+                    <li>Never miss twice in a row</li>
+                    <li>Share goals with a friend</li>
+                </ul>
+            </details>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p><small>Small daily improvements lead to remarkable results. &copy; 2026 Personal Habit Tracker. Built with pure <abbr title="HyperText Markup Language">HTML</abbr>.</small></p>
+    </footer>
+
+</body>
+</html>
